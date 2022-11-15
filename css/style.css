@@ -23,7 +23,6 @@ h1{
 }
 p{
     font-size: 18px;
-    padding-bottom: 30px ;
 }
 .button{
     text-align: right;
@@ -32,9 +31,13 @@ p{
     border-radius: 30px;
     border: white;
 }
-h2{
-    /* padding-bottom: 30px; */
+li{
+    list-style: none;
 }
+a{
+    text-decoration: none;
+}
+
 
 
 /* HEADER */
@@ -60,6 +63,7 @@ header{
 }
 .lower-header div .button{
     font-size: 15px;
+    margin-top: 30px;
 }
 .lower-header div button:last-child{
     background-color: black;
@@ -69,8 +73,7 @@ header{
     text-align: center;
     flex-grow: 1;
 }
-ul > li{
-    list-style: none;
+.list ul li{
     display: inline-block;
     margin: 0 15px;
 }
@@ -110,63 +113,44 @@ main section div:nth-child(2){
 }
 
 /* FOOTER  */
-.end {
-    justify-content: space-between;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* DEBUG */
-div{
-    border: 1px dashed black;
-}
-
-
-.top-footer{
-    border-bottom: 2px solid white;
-}
 footer{
     background-color: black;
+    padding: 40px 0;
+    color: white;
 }
-.top-footer div{
+.top-footer{
+    align-items: flex-start;
+}
+.top-footer div:not(.social){
     width: calc(75% / 6);
-    height: 500px;
-    background-color: aqua;
 }
-.top-footer .social{
-    background-color: palevioletred;
+.social img{
+    width: 25px;
+    margin: 20px 5px 20px 0;
+    vertical-align: middle;
+}
+.social{
     width: 25%;
 }
-.lower-footer .end{
+.social i{
+    margin-right: 15px;
+}
+.column li{
+    margin-bottom: 15px;
+}
+.info a, footer h2{
+    color: #8ea1e1
+}
+.lower-footer{
+    border-top: 1px solid white;
     width: 75%;
-    background-color: aqua;
-    height: 50px;
+    margin: 0 auto;
 }
-.end div{
-    height: 30px;
-    width: 60px;
-    background-color: pink;
-    text-align: center;
+.end {
+    justify-content: space-between;
+    width: 100%;
 }
-
-
-
-
-
-
+.end .button{
+    background-color: #8ea1e1;
+    color: white;
+}
