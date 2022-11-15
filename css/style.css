@@ -1,0 +1,146 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    padding: 30px;
+}
+div{
+    padding: 5px;
+}
+
+/* HEADER */
+.top-header{
+    max-width: 70%;
+    margin: auto;
+}
+.list{
+    text-align: center;
+    flex-grow: 1;
+}
+ul > li{
+    list-style: none;
+    display: inline-block;
+}
+li > a{
+    text-decoration: none;
+    color: black;
+}
+.button{
+    text-align: end;
+}
+
+/* MAIN */
+.section-two div:last-child{
+    order: -1
+}
+.section-two, .section-four{
+    background-color: lightgray;
+}
+
+/* FOOTER  */
+.end {
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUG */
+div{
+    border: 1px dashed black;
+}
+header{
+    background-color: aqua;
+}
+.top-header{
+    height: 50px;
+}
+.top-header div{
+    background-color: orange;
+    height: 30px;
+    width: 200px;
+}
+
+.lower-header{
+    background-color: blue;
+}
+
+.lower-header div{
+    background-color: palevioletred;
+    height: 450px;
+    width: 60%;
+}
+
+/* .section-two, .section-four{
+    background-color: gray; */
+main section div{
+    height: 500px;
+    width: 50%;
+    background-color: lightblue;
+}
+.section-four > div{
+    background-color: green;
+    height: 700px;
+    width: 75%;
+}
+main section div:nth-child(2){
+    width: 25%;
+    background-color: pink;
+}
+.top-footer{
+    border-bottom: 2px solid white;
+}
+footer{
+    background-color: black;
+}
+.top-footer div{
+    width: calc(75% / 6);
+    height: 500px;
+    background-color: aqua;
+}
+.top-footer .social{
+    background-color: palevioletred;
+    width: 25%;
+}
+.lower-footer .end{
+    width: 75%;
+    background-color: aqua;
+    height: 50px;
+}
+.end div{
+    height: 30px;
+    width: 60px;
+    background-color: pink;
+    text-align: center;
+}
+
+
+
+
+
+
